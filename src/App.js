@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
 import axios from 'axios'
-// import Character from './components/Character';
+
+import Character from './components/Character';
 
 
 
@@ -33,7 +34,7 @@ const App = () => {
     <div className="App">
       <h1 className="Header">Characters</h1>
       {characterList.map((char, id) => {
-        return <h1> {`${char.name}`}_________Birth Year: {`${char.birth_year}`}</h1>
+        return <Character name={char.name} birth_year={char.birth_year}/>
       })}
       
     </div>
