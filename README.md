@@ -79,6 +79,15 @@ After finishing your required elements, you can push your work further. These go
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Put your answers underneath the questions:
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
+    -- React was created by the team at facebook because they needed to solve a really important problem and that was the fact that it is impossible to refresh every user's facebook page every time an event like a comment happens or a like button is pressed, these such events are happening at such a high rate facebook needed to update the DOM but not the whole DOM at one time, so they created React which is a UI library with notable features such as a virtual DOM which allows the real DOM to que up changes before it renders using a 'hook' called useState 
+
 1. Describe component state.
+    -- state in react is an object like props but they are only managed within that component.
+
+
 1. Describe props.
+    -- props is an object like state but it's different in that it is passed to other components. Props are like a slice of state data that is it's own object and gets passed into other component functions.
+
+
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+    -- a side effect is basically anything that affects something outside of the scope of the function that is being executed. specifically a state variable is passed into a useEffect hook and the DOM gets something new rendered to it. 
